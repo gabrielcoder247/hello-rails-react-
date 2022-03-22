@@ -4,21 +4,21 @@ import { Provider } from 'react-redux';
 import Greeting from './Greeting';
 import store from '../redux/configStore';
 
-const App = () => ( <
-    Provider store = { store } >
-    <
-    BrowserRouter >
-    <
-    Routes >
-    <
-    Route exact path = "/"
-    element = { < Greeting / > }
-    /> <
-    /Routes> <
-    /BrowserRouter> { ' ' }
+const App = () => (
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<Greeting />}
+        />
+      </Routes>
+    </BrowserRouter>
+    {' '}
+    { ' ' }
 
-    <
-    /Provider>
+  </Provider>
 );
 
 export default App;
